@@ -1,4 +1,18 @@
 ########
+## Installing wine 
+## source: https://wiki.winehq.org/Ubuntu
+######
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+
+## for 21.04 check the source for different versions
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
+
+sudo apt update
+sudo apt install --install-recommends winehq-staging
+
+########
 ## download the last launcher (Windows)
 ####
 wget https://www.eveonline.com/EveLauncher-2023444.exe
