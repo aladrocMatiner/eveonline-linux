@@ -21,6 +21,7 @@ sudo apt install --install-recommends winehq-staging
 
 ########
 ## download the last launcher (Windows)
+## The one here is the latest as in today, grab a new one from: https://www.eveonline.com/download
 ####
 wget https://www.eveonline.com/EveLauncher-2023444.exe
 
@@ -54,8 +55,9 @@ export LD_PRELOAD=""
 
 ######
 ## install the game
+## Remeber to update the filename of the launcher you downloaded
 ####
-mv EveLauncher-2023444.exe EveLauncher-2023444.exe
+mv EveLauncher-2023444.exe $HOME/.cache/eve/
 WINEPREFIX=$HOME/wineprefixes/eve/ wine $HOME/.cache/eve/EveLauncher-2023444.exe
 
 ######
