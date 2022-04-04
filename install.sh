@@ -26,6 +26,10 @@ wget https://github.com/doitsujin/dxvk/releases/download/v1.10.1/dxvk-1.10.1.tar
 tar -xvf $HOME/.cache/dxvk/dxvk.tar.gz -C $HOME/.cache/dxvk/
 WINEPREFIX=$HOME/wineprefixes/eve/ $HOME/.cache/dxvk/dxvk-1.10.1/setup_dxvk.sh install
 
+########
+## (Optional) Other personal setting (only for me)
+####
+export LD_PRELOAD=""
 
 ######
 ## install the game
@@ -37,8 +41,3 @@ WINEPREFIX=$HOME/wineprefixes/eve/ wine $HOME/.cache/eve/EveLauncher-2023444.exe
 ## Run Launcher
 ####
 WINEDEBUG=-all WINEPREFIX=$HOME/wineprefixes/eve/ wine C:\\\\Eve\\eve.exe
-
-########
-## Other personal setting (only for me)
-####
-export LD_PRELOAD=""
