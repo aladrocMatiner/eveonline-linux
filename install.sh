@@ -6,8 +6,15 @@ sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
 
-## for 21.04 check the source for different versions
+## enabled for 21.04 check the winehq source for different versions
 sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
+
+#Ubuntu 21.10	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ impish main'
+#Ubuntu 21.04	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ hirsute main'
+#Ubuntu 20.10	sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ groovy main'
+#Ubuntu 20.04  sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+#Ubuntu 18.04  sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+
 
 sudo apt update
 sudo apt install --install-recommends winehq-staging
