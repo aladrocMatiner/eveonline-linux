@@ -30,7 +30,7 @@ WINEPREFIX=$HOME/wineprefixes/eve/ $HOME/.cache/dxvk/dxvk-1.10.1/setup_dxvk.sh i
 ######
 ## install the game
 ####
-WINEPREFIX=$HOME/wineprefixes/eve/ wine $HOME/.cache/eve/EveLauncher.exe
+WINEPREFIX=$HOME/wineprefixes/eve/ wine $HOME/.cache/eve/EveLauncher-2023444.exe
 
 ######
 ## Run Launcher
