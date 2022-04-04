@@ -37,3 +37,8 @@ WINEPREFIX=$HOME/wineprefixes/eve/ wine $HOME/.cache/eve/EveLauncher-2023444.exe
 ## Run Launcher
 ####
 WINEDEBUG=-all WINEPREFIX=$HOME/wineprefixes/eve/ wine C:\\\\Eve\\eve.exe
+
+########
+## Other personal setting (only for me)
+####
+export LD_PRELOAD=""
